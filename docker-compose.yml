@@ -1,0 +1,9 @@
+version: "3"
+services:
+  geektechstudio3:
+    build:
+      context: .
+    container_name: movie
+    command: python manage.py runserver 0.0.0.0:8000
+    ports:
+      - 8000:8000
